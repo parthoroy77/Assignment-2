@@ -2,7 +2,15 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
-
+.primary-btn{
+        font-size: 20px;
+        color: white;
+        padding: 20px 25px;
+        background: #FF900E;
+        border: 0;
+        border-radius: 8px;
+        cursor: pointer;
+}
 /*-----------------------------------------
                 Header Styles
 ------------------------------------------- */
@@ -47,22 +55,126 @@
     font-size: 16px;
     margin: 30px 0;
 }
-.banner-btn{
-    font-size: 20px;
-    color: white;
-    padding: 20px 25px;
-    background: #FF900E;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-}
 .banner-photo img{
     height: 700px;
     width: 1200px;
     margin-top: 50px;
 }
+/* ------------------------------------------
+                Article Section Style
+---------------------------------------------- */
+.article-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 130px 150px;
+}
+.article-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+}
+.article-title{
+    font-size: 45px;
+}
+.article-description{
+    font-size: 16px;
+    color: #727272;
+    margin: 15px 0;
+}
+/* ----------------------Feature Section Design---------------------- */
+.feature-container{
+    display: flex;
+    gap: 100px;
+    padding: 50px 150px;
+}
+.feature-heading{
+    border-left: 5px solid #FF900E;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.feature-title{
+    font-size: 45px;
+}
+.description{
+    font-size: 16px;
+    color: #727272;
+    margin-top: 20px;
+}
+.feature{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 30px;
+}
 
-/* -----------------------------------Styles For Mobile Device(Iphone 12 pro)----------------------------- */
+.feature-name{
+    font-size: 20px;
+    color: #131313;
+}
+.feature-description{
+    font-size: 16px;
+    color: #727272;
+}
+
+.feature-btn{
+    background-color: #FF900E;
+    font-size: 65px;
+    color: white;
+    padding: 40px;
+    border: 0;
+    border-radius: 15px;
+    transform: translate(-60px, -150px);
+    line-height: 40px;
+    cursor: pointer;
+}
+/* -------------------Fact section--------------------- */
+.facts-container{
+    padding-left: 150px;
+}
+.fact-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.fact-description{
+    font-size: 16px;
+    color: #727272;
+    margin-top: 20px;
+}
+.achievement-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 100px 150px;
+}
+.achievement{
+    height: 170px;
+    width: 200px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 45px 36px;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out, transform 0.2s linear, border-radius 0.2s linear;
+}
+.achievement h3{
+    font-size: 45px;
+    color: #424242;
+    margin-top: 15px 0;
+    
+}
+.achievement h5{
+    font-size: 20px;
+    color: #727272;
+}
+.achievement:hover{
+    box-shadow: inset 20em 0 0 0 #8fc866;
+    border-radius: 50px;
+    transform: translateY(-0.75em);
+}
+/* -----------------------------------Styles For Mobile Device----------------------------- */
 @media only screen and (max-width:576px) {
     /* Header responsive */
     .header{
@@ -80,11 +192,51 @@
     }
     /*------------------ Banner responsive----------- */
     .banner-container{
-        padding: 0 20px;
+        padding: 30px 20px;
     }
     .banner-photo img{
         width: 300px;
         height: 250px;
         object-fit: cover;
     }
+    /*-----------Article Responsive---------- */
+    .article-container{
+        flex-direction: column;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .article-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* ----------Feature Section----------- */
+    .feature-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .feature-img{
+        text-align: center;
+    }
+    .feature-img img{
+        width: 350px;
+        height: 420px;
+        object-fit: cover;
+    }
+    .feature-btn{
+        transform: translate(20px, 20px);
+        font-size: 35px;
+        padding: 20px 20px;
+        cursor: pointer;
+    }
+    /* -------facts section ------------*/
+    .facts-container{
+        margin-top: 50px;
+        padding: 10px 20px;
+    }
+    /* ---------------Achievement Section------------- */
+    .achievement-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        margin: 20px 10px;
+    }
+    
 }
