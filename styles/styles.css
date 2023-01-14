@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*-----------------------------------------
+                Header Styles
+------------------------------------------- */
+
+.header{
+    background-color: #fff4e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 230px;
+}
+.company-name{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.menu-container{
+    display: flex;
+    gap: 40px;
+}
+.menu-item{
+    list-style: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    /* margin-left: 40px; */
+}
+/* ---------------------------------------------------------
+                    Banner Styles
+------------------------------------------------------------ */
+.banner-container{
+    background-color: #fff4e7;
+    text-align: center;
+    padding: 100px 0 30px 0;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+}
+.banner-description{
+    color: #727272;
+    font-size: 16px;
+    margin: 30px 0;
+}
+.banner-btn{
+    font-size: 20px;
+    color: white;
+    padding: 20px 25px;
+    background: #FF900E;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.banner-photo img{
+    height: 700px;
+    width: 1200px;
+    margin-top: 50px;
+}
+
+/* -----------------------------------Styles For Mobile Device(Iphone 12 pro)----------------------------- */
+@media only screen and (max-width:576px) {
+    /* Header responsive */
+    .header{
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px 0;
+    }
+    .company-name{
+        text-align: center;
+        font-size: 25px;
+    }
+    .menu-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /*------------------ Banner responsive----------- */
+    .banner-container{
+        padding: 0 20px;
+    }
+    .banner-photo img{
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
