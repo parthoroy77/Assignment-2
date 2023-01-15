@@ -10,6 +10,11 @@
         border: 0;
         border-radius: 8px;
         cursor: pointer;
+        transition: transform 0.2s ease;
+}
+.primary-btn:hover{
+    border-radius: 20px;
+    transform: translateY(-0.5em);
 }
 /*-----------------------------------------
                 Header Styles
@@ -117,6 +122,7 @@
 .feature-description{
     font-size: 16px;
     color: #727272;
+    margin: 10px 0;
 }
 
 .feature-btn{
@@ -174,6 +180,101 @@
     border-radius: 50px;
     transform: translateY(-0.75em);
 }
+/*-----------------------Bonus Section Styles ----------------  */
+.contact-section-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 100px 0;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.input-title{
+    font-size: 40px;
+    font-weight: 600;
+}
+.form-container form input{
+    height: 50px;
+    width: 500px;
+    border: 1px solid #8fc866;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+form textarea{
+    height: 200px;
+    border: 1px solid #FF900E;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 20px;
+}
+form div {
+    margin-top: 20px;
+}
+.contact-info-container{
+    padding: 60px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.contact-title{
+    font-size: 45px;
+}
+.contact-details{
+    width: 350px;
+    margin: 50px 0;
+}
+.detail{
+    font-size: 25px;
+}
+.detail span{
+    font-weight: bolder;
+}
+.fa-solid{
+    color: rgb(31, 18, 91);
+}
+/*------------------------------------Sponsor section styles -----------------------*/
+.sponsor-container{
+    text-align: center;
+    margin: 100px 0;
+}
+.sponsor-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.sponsor-description{
+    font-size: 16px;
+    color: #727272;
+}
+.sponsor-icon{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.sponsor-icon img{
+    height: 50px;
+    filter: grayscale(100%);
+}
+/*-------------------Footer Section Styles ---------*/
+footer{
+    padding: 0 240px;text-align: center;
+    margin: 100px 0;
+}
+.footer-container{
+    background-color: #FFF4E7;
+    padding: 30px 200px;
+    border-radius: 8px;
+}
+.footer-container p{
+    font-size: 20px;
+    color: #424242;
+}
 /* -----------------------------------Styles For Mobile Device----------------------------- */
 @media only screen and (max-width:576px) {
     /* Header responsive */
@@ -190,6 +291,7 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     /*------------------ Banner responsive----------- */
     .banner-container{
         padding: 30px 20px;
@@ -208,7 +310,10 @@
     .article-img{
         grid-template-columns: repeat(1, 1fr);
     }
-    /* ----------Feature Section----------- */
+    .article-description{
+        padding: 0 20px;
+    }
+    /* ----------Feature Responsive----------- */
     .feature-container{
         flex-direction: column;
         padding: 0;
@@ -222,21 +327,60 @@
         object-fit: cover;
     }
     .feature-btn{
-        transform: translate(20px, 20px);
+        transform: translate(20px, -50px);
         font-size: 35px;
         padding: 20px 20px;
         cursor: pointer;
     }
-    /* -------facts section ------------*/
+    /* -------facts Responsive ------------*/
     .facts-container{
         margin-top: 50px;
         padding: 10px 20px;
     }
-    /* ---------------Achievement Section------------- */
+    /* ---------------Achievement Responsive------------- */
     .achievement-container{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
         margin: 20px 10px;
     }
-    
+    /*----------------Bonus Responsive-----------------  */
+    .contact-section-container{
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+    .form-container form input{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .form-container form{
+        padding: 30px 10px;
+    }
+    .form-container form input{
+        padding: 20px 5px;
+    }
+    .contact-info-container, .contact-details{
+        padding: 20px 10px;
+    }
+    .detail{
+        font-size: 16px;
+        height: 20px;
+    }
+    /*----------------Sponsor Responsive -----------*/
+    .sponsor-container{
+        margin: 50px 0;
+    }
+    .sponsor-icon{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsor-icon img{
+        width: 100px;
+    }
+    /*-----------Footer Responsive ----------*/
+    footer{
+        padding: 0 10px;
+    }
+    .footer-container{
+        padding: 10px;
+    }
 }
