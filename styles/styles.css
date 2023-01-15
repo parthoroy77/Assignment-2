@@ -43,9 +43,7 @@
     font-weight: 500;
     /* margin-left: 40px; */
 }
-/* ---------------------------------------------------------
-                    Banner Styles
------------------------------------------------------------- */
+/* ------------------------------Banner Styles------------------------------- */
 .banner-container{
     background-color: #fff4e7;
     text-align: center;
@@ -65,9 +63,7 @@
     width: 1200px;
     margin-top: 50px;
 }
-/* ------------------------------------------
-                Article Section Style
----------------------------------------------- */
+/* -----------------------------Article Section Style------------------------- */
 .article-container{
     display: flex;
     justify-content: center;
@@ -275,7 +271,7 @@ footer{
     font-size: 20px;
     color: #424242;
 }
-/* -----------------------------------Styles For Mobile Device----------------------------- */
+/* -----------------------------Responsive Styles For Mobile Device------------------------ */
 @media only screen and (max-width:576px) {
     /* Header responsive */
     .header{
@@ -317,6 +313,9 @@ footer{
     .feature-container{
         flex-direction: column;
         padding: 0;
+    }
+    .description{
+        padding: 0 20px;
     }
     .feature-img{
         text-align: center;
